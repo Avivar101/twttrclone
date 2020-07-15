@@ -1,0 +1,326 @@
+* {
+    margin:             0;
+    padding:            0;
+    box-sizing:         border-box;
+}
+
+body {
+    background-color: rgb(21, 32, 43);
+    color: white;
+    display: flex;
+    font-family: segoe UI Bold, Segoe UI;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100vh;
+    width: 318px;
+   /* border: 1px solid gray;*/
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    float: left;
+}
+
+.fixednavbar {
+   /* border: 1px solid white;*/
+    height: 100%;
+    width: 260px;
+    float: right;
+    
+}
+
+.fixednavbar ul {
+   /* border: 1px solid white;*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fixednavbar ul li {
+    list-style: none;
+   /* border: 1px solid white;*/
+    margin: 5px 0 5px;
+}
+
+.fixednavbar a {
+    text-decoration: none;
+    color: rgb(239, 243, 245);
+    font-family: segoe UI Bold, Segoe UI;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+.navmenu {
+    width: max-content;
+    transition: 0.3s;
+}
+
+.navmenu:hover {
+    width: max-content;
+    background-color: rgb(33, 68, 114);
+    border-radius: 50px;
+}
+
+.navmenu a:hover {
+    color: rgb(25, 191, 241);
+}
+
+.btn{
+    background-color: rgb(25, 191, 241);
+    border-radius: 50px;
+    width: 220.3px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: 
+    rgba(25, 191, 241, 0.836);
+}
+
+.profile {
+    transition: 0.3s;
+    border-radius: 50px;
+    width: 250px;
+}
+
+
+.profile:hover {
+    background-color: rgb(33, 68, 114);
+}
+
+.profile h3 {
+    font-size: 15px;
+}
+
+.profile p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 8px;
+}
+
+.pagecontnt {
+    width: 600px;
+    float: left;
+    border: 1px solid rgba(101, 119, 134, 0.61);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 315px;
+    box-sizing: content-box;
+}
+
+.home {
+    /*border: 1px solid grey;*/
+    height: 50px;
+    width: inherit;
+    position: fixed;
+    background-color: rgb(21, 32, 43);
+    z-index: 1;
+    
+}
+
+.home h3 {
+    margin-top: 13px;
+    margin-left: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 800;
+}
+
+
+
+.twtt {
+    /*border: 1px solid rgba(101, 119, 134, 0.61);*/
+    margin-top: 51px;
+    z-index: -1;
+    width: inherit;
+}
+
+.twttrblock {
+    border-top: 1px solid rgba(101, 119, 134, 0.61);
+    height: max-content ;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.profilepic {
+    width: 50px;
+}
+
+.profilepic img {
+    border-radius: 50%;
+    height: 47px;
+    width: 47px;
+}
+
+.post {
+    width: 100%;
+    padding: 10px;
+}
+
+.tweet {
+    font-size: 19px;
+    color: rgb(136, 153, 166);
+    line-height: 35px;
+    border-bottom: 1px solid rgba(101, 119, 134, 0.61);;
+}
+
+.filtr {
+    color: rgb(45, 138, 214);
+    display: flex;
+}
+
+.addon {
+    height: 40px;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.addns {
+    width: 100%;
+    color: rgb(45, 138, 214);
+    display: flex;
+}
+
+.addnbtn {
+    
+    background-color: rgba(25, 191, 241, 0.637);
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.5s;
+    width: 85px;
+}
+
+.addnbtn h5 {
+    margin-top: 10px;
+}
+
+.twttrcontnt {
+    border-top: 1px solid rgba(101, 119, 134, 0.61);
+    height: auto;
+    width: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.contnttwt {
+    height: max-content;
+    color: white;
+    padding: 5px;
+}
+
+.twtname {
+    height: max-content;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.twtname p {
+    color: rgb(136, 153, 166);
+}
+
+.share {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.share img {
+    border-radius: 15px;
+    width: inherit;
+}
+
+.socialbtn {
+    color: rgb(136, 153, 166);
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.suggestnbar {
+   /* border: 1px solid grey;*/
+    width: 31.9%;
+}
+
+.shift {
+    border: 1px solid transparent;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+   /* border: 1px solid grey;*/
+    height: 50px;
+    width: inherit;
+    z-index: 1;
+    position: fixed;
+    margin-top: 0;
+}
+
+.search input[type=text] {
+    border-color: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    width: inherit;
+    margin-top: 5px;
+    background-color: rgba(101, 119, 134, 0.61);
+}
+
+.tff {
+    margin-top: 58px;
+}
+
+.tff p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+}
+
+.blck {
+    border-top: 1px solid rgba(101, 119, 134, 0.61);
+    padding: 12px;
+}
+
+.trends {
+    border-radius: 15px;
+    background-color: rgb(25, 39, 52);
+}
+
+.blck:first-child {
+    border: transparent;
+}
+
+.twt {
+    margin-top: 5px;
+}
+
+.follow {
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: rgb(25, 39, 52);
+}
+
+.footer {
+
+}
